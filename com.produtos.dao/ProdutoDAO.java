@@ -1,7 +1,7 @@
 public interface ProdutoDAO{
-	public void insert(Produto produto);
-	public void delete(Produto produto);
-	public void update(Produto produto);
-	public Produto getProduto();
+	public int insert(Produto produto);
+	public int delete(int id);
+	public int update(Produto produto);
+	public Produto findById(int id);
 	public List<Produto> getProdutos();
 }
